@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rmove Duplicates From Sorted Array</title>
+</head>
+<body>
+    <!-- remove duplicates from sorted array :
+    problem: remove duplicate number fromm given array.
+    test case : 
+                input : nums = [1,1,2] 
+                output : [1,2]    -->
+   <script>
+    var array = [1 , 1 , 2];
+    var uniqueArray = [ ];
+    for ( i = 0;  i<array.length; i++) {
+        if ( uniqueArray.indexOf( array[i]) === -1 ) {
+            uniqueArray.push(array[i]);
+        }
+        }
+    console.log(uniqueArray);
+   </script>
+</body>
+</html>

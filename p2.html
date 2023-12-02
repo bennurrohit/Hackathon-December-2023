@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWO SUM </title>
+</head>
+<body>
+    <script>
+        // TWO SUM:
+        // given an array of integers and a target sum, return the indices of the two numbers that add up to the target.
+        // test case : 
+        //             input : [2,7,11,15],9
+        //               output : [0,1]
+
+        let array = [2 , 7 , 11 , 15];  sum = 9;
+        for (i = 0; i < array.length; i++ ){
+            for (j = 0; j <= array.length; j++ ){
+                if (array[ i ] + array[ j ] == sum ){
+                    console.log( i ,  j ); 
+                }
+            }
+        }
+    </script>
+</body>
+</html>
